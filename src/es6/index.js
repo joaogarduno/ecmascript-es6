@@ -232,8 +232,17 @@ console.log(generatorHello.next().value);
 console.log(generatorHello.next().value);
 
 // Esto es muy importante cuando estemos trabajando con logicas o una serie de algoritmos que queramos establecer desde nuestro lado y ver como lo podemos ir ejecutandolos
+// ==========================================================
+
+// ¿QUE SE IMPLEMENTO EN ES7?
+// Se crea una carpeta llamada "es7" y dentro un archivo index.js y dentro se mencionan 2 caracteristicas que se agregaron a ES7
 
 
+
+
+
+// ==========================================================
+// ==========================================================
 // ==========================================================
 // ==========================================================
 // ==========================================================
