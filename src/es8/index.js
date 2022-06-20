@@ -130,7 +130,7 @@ const helloWorld = () => {
     return new Promise((resolve, reject) =>{
         // Eso quiere decir que si no llega a suceder lo que nosotros esperamos, pues va a pasar por este estado
         // Por aqui es por donde le vamos a decir que pase y que resuelva de la siguiente manera creando un "TRUE", con una operacion de un if
-        (false)
+        (true)
         // que nos va a permitir a nosotros, decirle que esta promesa va a ejecutarse.
         ? setTimeout(() => resolve('Hello World'), 3000)
         // Ya que es un operador ternario ?, : un "if" "else"
@@ -155,12 +155,13 @@ helloAsync();
 
 
 // PARTE N° 2 - Como ejecutar correctamente el "async await"
+
 // Otra pruesta generando una funcion
 const anotherFunction = async () => {
     // Esto nos va a permitir a nosotros trabajar mejor con el "try catch"
     // Vamos a probar por sobre lo que se va ejecutar, en todo caso que esto tenga un error o un valor que no coincide con la logica que estamos haciendo obviamente va a caer en el "catch" y vamos a poder capturar ese error
     // Entonces esta es la forma propuesta para manejar correctamente los errores.
-    // Lo primero que tenemos que hacer es encapsular dentro de "try" lo que vamos a ejecutar
+    // Lo primero que tenemos que hacer es encapsular dentro de "try" lo que vamos a ejecutar a nuestra funcion helloWord
     try{
         const hello = await helloWorld();
         console.log(hello);
