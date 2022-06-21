@@ -91,7 +91,7 @@ console.log('food'.padEnd(12, ' ----------'));
 // ==============================
 
 
-// PARTE N° 4 - Padding
+// PARTE N° 4 - Trailing Comas
 
 // De lo que nos podemos dar cuenta tambien en todo el codigo que hemos hecho es que estamos ocupando el "tailing-comas"
 // Eso que es? eso es cuando agregamos una coma "," al final dentro de nuestro objeto para pode entonces establecer una forma en la cual es mas amigable y simple para nosotros los desarrolladores empezar a añadir mas elementos sin caer en un error que es muy comun.

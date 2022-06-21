@@ -1,5 +1,9 @@
 // ==========================================================
-// #9 Clase - Operador de Reposo, 
+// #9 Clase - Principales caracteristicas vistas sobre esta version:
+    // 1. Operador de Reposo.
+    // 2. Propiedades de Propagacion
+    // 3. Promise Finally()
+    // 4. Regex Data
 
 // Principales caracteristiscas que se añadieron en la version 9, esta es lanzada en junio del 2018, vamos a entender estas nuevas caracteristicas
 // ==============================
