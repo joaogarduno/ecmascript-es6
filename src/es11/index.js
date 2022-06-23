@@ -144,9 +144,9 @@ console.log(fooo);
 // ==============================
 
 
-// PARTE N° 6 - Optional shining
+// PARTE N° 6 - Optional Chaining
 
-// Esta caracteristica nos va ayudar a trabajar con los arreglos y los objetos y acceder a cada uno de estos elementos, viene siendo el "optional shining"
+// Esta caracteristica nos va ayudar a trabajar con los arreglos y los objetos y acceder a cada uno de estos elementos, viene siendo el "optional chaining"
 // Con el cual vamos a poder trabajar con diferentes niveles de estos recursos
 
 const user = {};

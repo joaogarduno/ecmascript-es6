@@ -20,25 +20,25 @@
 
 // Entonces... sera una funcion a la cual se le pasaran 3 valores (name, age y country)
 // como se hacian las funciones
-// function newFunction(name, age, country){
+function newFunction(name, age, country){
     // ¿Como la inicializamos?
-//     var name = name || 'oscar';
-//     var age = age || 32;
-//     var country = country || 'MX';
-//     console.log(name, age, country);
-// }
+    var name = name || 'oscar';
+    var age = age || 32;
+    var country = country || 'MX';
+    console.log(name, age, country);
+}
 // De esta forma nosotros estableciamos estos puntos
 
 
 // Ahora en ECMAScript se añadio una forma en la cual nosotros podemos establecerlo desde la asignacion de los parametros
 // con ES6 - ECMAScript 6
 // desde la asignacion de los parametros
-// function newFunction2(name = 'oscar', age = 32, country = "MX"){
-//     console.log(name, age, country);
-// }
+function newFunction2(name = 'oscar', age = 32, country = "MX"){
+    console.log(name, age, country);
+}
 
-// newFunction2();
-// newFunction2('Ricardo', '23', 'CO');
+newFunction2();
+newFunction2('Ricardo', '23', 'CO');
 
 // ==============================
 
@@ -78,9 +78,9 @@
 
 // ES6
 // En ES6 ahora tenemos una nueva forma de utilizar "multi lineas"
-// let lorem2 = `otra frase epica que necesitamos.
-// ahora es otra frase epica.
-// `;
+let lorem2 = `otra frase epica que necesitamos.
+ahora es otra frase epica.
+`;
 
 // console.log(lorem);
 // console.log(lorem2);
@@ -94,18 +94,18 @@
 // EN VERSIONES ANTERIORES
 
 // Creamos un OBJETO y este OBJETO va a tener 3 elementos
-// let person = {
-//     'name': 'Joao',
-//     'age': 32,
-//     'country': 'MX'
-// }
+let person = {
+    'name': 'Joao',
+    'age': 32,
+    'country': 'MX'
+}
 // console.log(person.name, person.age);
 
 
 // CON ES6
 // De esta forma puedo extraer los elementos que necesito
-// let {name, age, country} = person;
-// console.log(name, age, country);
+let {name, age, country} = person;
+console.log(name, age, country);
 // ==============================
 
 // PARTE N° 3 - Operador de Propagacion (Spread Operator)
@@ -252,20 +252,20 @@
 // asincronismo
 // "promesas" en algun momento va a suceder algo.
 // Se genera un "Arrow Function"
-// const helloPromise = () => {
+const helloPromise = () => {
     // va a tener 2 elementos que son "resolve" y "reject"
-//     return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
 //         // establecer una validacion
 
 //         // la promesa tiene una espera de una logica que nosostros vamos a resolver si "aceptarla" o "rechazarla"
-//         if (true){
-//             resolve('Hey todo bien!!')
-//         } else{
-//             reject('Algo salio mal!!!!');
-//         }
+        if (true){
+            resolve('Hey todo bien!!')
+        } else{
+            reject('Algo salio mal!!!!');
+        }
 //         // Con  esto tenemos nuestra estructura de nuestra promesa
-//     });
-// }
+    });
+}
 
 // EJECUTAMOS
 // helloPromise()
@@ -285,29 +285,29 @@
 
 // CLASES MODULOS Y GENERADORES
 
-// class calculator{
+class calculator{
     // Entonces dentro del bloque de codigo de la clase "calculator".
     // en este boloque de codigo se le asigna un constructor, que es el metodo para inicializar nuestra clase
     // Entonces tenemos a nuestro constructor y un bloque de codigo.
     // Y es ahi donde se van asignar las variables, que van a estar disponibles en un "scope global"
-    // constructor(){
-    //     this.valueA = 0;
-    //     this.valueB = 0;
-    // }
+    constructor(){
+        this.valueA = 0;
+        this.valueB = 0;
+    }
 
     // Vamos a utilizar un metodo
     // metodo -> sumar
     // utilizamos el metodo de sumar
     // Este metodo va a tener 2 valores "valueA" y "valueB"
-    // sum(valueA, valueB){
-    //     this.valueA = valueA;
-    //     this.valueB = valueB;
-    //     return this.valueA + this.valueB;
-    // }
+    sum(valueA, valueB){
+        this.valueA = valueA;
+        this.valueB = valueB;
+        return this.valueA + this.valueB;
+    }
     // Entonces... en resumen tenemos:
     // Es una clase que tiene un constructor el cual esta asignando dentro del "scope Global" 2 variables.
     // Despues tenemos un metodo (sum) al cual se le pasaran los 2 elementos, que en este caso seria los dos valores que quiero sumar, y estamos asignando estas variables que se construyeron dentro de la clase a esos valores que recibo, y al final lo que hago es hacer la suma retornando este elemento.
-// }
+}
 
 // const calc = new calculator();
 // console.log(calc.sum(2, 2));
